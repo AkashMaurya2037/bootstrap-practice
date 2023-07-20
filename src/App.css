@@ -36,7 +36,7 @@ h2 {
     font-size: 3.4rem;
 }
 
-p{
+p {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
@@ -47,17 +47,106 @@ p{
     text-rendering: optimizeLegibility;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.hero-video--section{
-    max-width: 100%;
-    height: auto;
-    width: 60%;
-    border-radius: 1rem;
+button,
+a {
+    font-size: 1.15rem !important;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
 }
+
+.common-heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+}
+
+.common-title {
+    margin-bottom: 4.2rem;
+}
+
+/* Universal Classes End */
+
+/* Navbar Start */
+
+.nav-link {
+    color: var(--bs-main-color);
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+
+}
+
+/* Hero Section Start */
+
+.hero-section .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+
+.bg-main {
+    height: 80vh;
+    position: relative;
+}
+
+.bg-color {
+    background-color: var(--bs-dark-primary);
+}
+
+.bg-theme {
+
+    color: var(--bs-supporting-color);
+    background-image: none !important;
+}
+
+
+.hero-video--section {
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.text-light-grey {
+    color: var(--bs-primary-color);
+}
+
+/* Shape Divider Style */
+
+.custom-shape-divider-bottom-1689672518 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689672518 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 101px;
+    /* transform: rotateY(180deg); */
+}
+
+.custom-shape-divider-bottom-1689672518 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Shape Divider Style End */
+
+/* Service Section Start */
+
+.services-section {
+    padding: 6rem 0 3rem 0 !important;
+}
+
