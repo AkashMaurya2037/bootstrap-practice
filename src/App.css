@@ -12,7 +12,7 @@
     --bs-dark-primary: #1c1c1c;
     --bs-main-color: #fff;
     --bs-primary-color: #c6c6c6;
-    --secondary-color: #29a9fd;
+    --bs-secondary-color: #29a9fd;
     --bs-supporting-color: #C850C0;
 }
 
@@ -146,7 +146,43 @@ a {
 
 /* Service Section Start */
 
+
 .services-section {
     padding: 6rem 0 3rem 0 !important;
 }
 
+.icon-span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--bs-main-color);
+    color: var(--bs-secondary-color);
+}
+
+.card-box:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Service Section End */
+
+/* More Info Section Start */
+
+.more-info-section {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("./assets/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section{
+    position: relative;
+}
+
+.more-info-section .img-section img{
+
+    width: 70%;
+}
+
+/* More Info Section End */
