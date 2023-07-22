@@ -167,22 +167,27 @@ a {
 /* More Info Section Start */
 
 .more-info-section {
-    background-image: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.9)), url("./assets/wallpaper.jpg");
+    background-image: linear-gradient(rgba(22, 22, 22, 52%), rgba(22, 22, 22, 52%)), url("./assets/wallpaper.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 6rem 0;
+    /* padding: 6rem 0; */
     overflow: hidden;
 }
 
-.more-info-section .img-section{
+.more-info-section .img-section {
     position: relative;
 }
 
-.more-info-section .img-section img{
+.more-info-section .img-section img {
 
     width: 70%;
 }
 
 /* More Info Section End */
+
+/* Online Section Start */
+
+
+/* Online Section End */

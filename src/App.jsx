@@ -7,7 +7,9 @@ import Landing_Ani from "./assets/Landing_Ani.mp4"
 import "./App.css"
 import link from "./assets/link.gif"
 import phoneGif from "./assets/phoneGif.png"
+import music from "./assets/music.png"
 import ServiceCard from './components/ServiceCard'
+import OnlineCard from './components/OnlineCard'
 
 function App() {
 
@@ -88,15 +90,15 @@ function App() {
 
       {/* Service Section Start -------------------------------------------------------------------- */}
 
-      <section className="services-section">
+      <section className="common-section business-section" id='online-section'>
         <div className="container text-center common-title fw-bold">
           <h2 className="common-heading text-capitalize">what we do for <br /> your business</h2>
           <hr className='w-25 mx-auto' />
         </div>
 
         {/* Service Cards */}
-        <div className="container mt-5">
-          <div className="row">
+        <div className="container mb-5 mt-5">
+          <div className="row g-5">
 
 
             <ServiceCard
@@ -129,7 +131,7 @@ function App() {
           <div className="row ">
 
             <div className="col-12 col-md-12 col-lg-6 img-section" >
-              <figure>
+              <figure className='d-flex justify-content-center align-items-center'>
                 <img src={phoneGif} className='img-fluid' />
               </figure>
             </div>
@@ -161,6 +163,82 @@ function App() {
         </div>
       </section>
       {/* Paralax Section End -------------------------------------------------------------------- */}
+      {/* Online-Mod Section Start -------------------------------------------------------------------- */}
+
+      <section className="services-section">
+        <div className="container text-center common-title fw-bold">
+          <h2 className="common-heading text-capitalize">Generating New Customers <br />Via Online Mode</h2>
+          <hr className='w-25 mx-auto' />
+        </div>
+
+        <div className="container">
+          <div className="row g-5">
+
+            <OnlineCard
+              imgAlt="Image"
+              imgLink={music}
+              paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo cum modi velit obcaecati ut quisquam aut quam excepturi autem delectus odit reiciendis ducimus quos."
+              title="Image"
+            />
+            <OnlineCard
+              imgAlt="Image"
+              imgLink={music}
+              paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo cum modi velit obcaecati ut quisquam aut quam excepturi autem delectus odit reiciendis ducimus quos."
+              title="Image"
+            />
+            <OnlineCard
+              imgAlt="Image"
+              imgLink={music}
+              paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo cum modi velit obcaecati ut quisquam aut quam excepturi autem delectus odit reiciendis ducimus quos."
+              title="Image"
+            />
+            <OnlineCard
+              imgAlt="Image"
+              imgLink={music}
+              paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo cum modi velit obcaecati ut quisquam aut quam excepturi autem delectus odit reiciendis ducimus quos."
+              title="Image"
+            />
+
+          </div>
+        </div>
+
+      </section>
+      {/* Online-Mod Section End -------------------------------------------------------------------- */}
+      {/* Testimonail Section Start -------------------------------------------------------------------- */}
+      <section className="common-section business-section" id='online-section'>
+        <div className="container text-center common-title fw-bold">
+          <h2 className="common-heading text-capitalize">what we do for <br /> your business</h2>
+          <hr className='w-25 mx-auto' />
+        </div>
+
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img className="d-block w-100" src={phoneGif} alt="First slide" />
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100" src={music} alt="Second slide" />
+            </div>
+            <div className="carousel-item">
+              <img className="d-block w-100" src="..." alt="Third slide" />
+            </div>
+          </div>
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+      {/* Testimonail Section End -------------------------------------------------------------------- */}
 
     </>
   )
